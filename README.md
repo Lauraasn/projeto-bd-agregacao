@@ -1,5 +1,5 @@
 # projeto-bd-agregacao
-'''
+''' mermaid
 erDiagram
  FUNCIONARIO ||--o{ FUNCIONARIO : "gerencia"
  FUNCIONARIO ||--o{ DEPENDENTE : "possui"
