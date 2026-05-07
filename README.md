@@ -1,5 +1,5 @@
 # projeto-bd-agregacao
-""" mermaid
+```mermaid
 erDiagram
  FUNCIONARIO ||--o{ FUNCIONARIO : "gerencia"
  FUNCIONARIO ||--o{ DEPENDENTE : "possui"
@@ -25,4 +25,4 @@ erDiagram
  int funcionario_id FK
  int projeto_id FK
  }
- """
+ ```
