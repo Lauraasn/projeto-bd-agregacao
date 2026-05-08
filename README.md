@@ -1,4 +1,5 @@
 # projeto-bd-agregacao
+Alunos: Laura Artemes de Sousa Nunes, Kauenny Leão Castro, Gustavo Cardoso da Silva, Pedro Henrique Carpina Farias Alves, Icaro Lucas Tenorio Rodrigues, John Kleverson Barbosa Rosa
 ```mermaid
 erDiagram
  PESSOA ||--o{ PESSOA : "gerencia"
