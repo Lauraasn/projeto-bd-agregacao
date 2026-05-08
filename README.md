@@ -1,19 +1,19 @@
 # projeto-bd-agregacao
 ```mermaid
 erDiagram
- FUNCIONARIO ||--o{ FUNCIONARIO : "gerencia"
- FUNCIONARIO ||--o{ DEPENDENTE : "possui"
+ PESSOA ||--o{ PESSOA : "gerencia"
+ PESSOA ||--o{ FUNCIONARIO : "possui"
  FUNCIONARIO }|--|{ PROJETO : "trabalha em (ALOCACAO)"
  ALOCACAO ||--o{ EQUIPAMENTO : "utiliza (AGREGAÇÃO)"
- FUNCIONARIO {
- int id PK
- string nome
- int supervisor_id FK
- }
- DEPENDENTE {
+ PESSOA {
  int id PK
  string nome
  int funcionario_id FK
+ }
+ FUNCIONARIO {
+ int id PK
+ int supervisor_id FK
+ int pessoa_id FK
  }
  PROJETO {
  int id PK
@@ -25,4 +25,4 @@ erDiagram
  int funcionario_id FK
  int projeto_id FK
  }
- ```
+```
